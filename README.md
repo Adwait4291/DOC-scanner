@@ -82,35 +82,6 @@ This project leverages several powerful Python libraries and external tools:
     * **Why:** The core engine performing the OCR. `pytesseract` is just the Python interface to this engine[cite: 1].
     * **Benefit:** A highly accurate, open-source OCR engine supporting multiple languages. **Note:** This must be installed separately on the system where the application runs.
 
-## Setup and Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone <your-repository-url>
-    cd DOC-Scanner
-    ```
-
-2.  **Install Tesseract OCR Engine:**
-    * **macOS:** `brew install tesseract tesseract-lang`
-    * **Ubuntu/Debian:** `sudo apt-get update && sudo apt-get install tesseract-ocr libtesseract-dev tesseract-ocr-all` (Install desired language packs like `tesseract-ocr-por` if needed [cite: 1])
-    * **Windows:** Download the installer from the [official Tesseract documentation](https://tesseract-ocr.github.io/tessdoc/Installation.html). Ensure Tesseract is added to your system's PATH environment variable.
-
-3.  **Install Poppler (if using `pdf2image` primarily):**
-    * **macOS:** `brew install poppler`
-    * **Ubuntu/Debian:** `sudo apt-get update && sudo apt-get install poppler-utils`
-    * **Windows:** Download Poppler binaries and add the `bin/` directory to your system's PATH.
-
-4.  **Create a Python virtual environment (Recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-5.  **Install Python dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
 ## Usage
 
 1.  Ensure Tesseract (and Poppler if needed) is correctly installed and accessible in your PATH.
