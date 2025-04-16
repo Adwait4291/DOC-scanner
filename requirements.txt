@@ -1,0 +1,25 @@
+# Core libraries
+streamlit
+Pillow
+torch
+torchvision
+transformers
+
+# OCR and PDF processing
+pytesseract
+pdf2image
+
+# Camera and QR Code
+streamlit-webrtc
+opencv-python
+qrcode
+
+# Data handling and Export
+pandas
+openpyxl  # For writing Excel files
+reportlab # For writing PDF files
+PyMuPDF
+
+# Note: textblob was removed as it wasn't used in the script.
+# Note: xlsxwriter was replaced with openpyxl as used in the code.
+# Note: Duplicates (pillow, pdf2image) were removed.
